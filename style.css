@@ -1,0 +1,175 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  background-color: #1a1a1a;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+  border: 2px solid #333;
+  min-width: 400px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.time-display {
+  display: block;
+  font-size: 4em;
+  font-weight: bold;
+  margin: 30px 0;
+  color: #00ff00;
+  text-shadow: 0 0 20px #00ff00;
+  font-family: "Courier New", monospace;
+  letter-spacing: 3px;
+}
+.buttons {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.start-btn {
+  background-color: #00ff00;
+  color: black;
+}
+
+.start-btn:hover {
+  background-color: #00cc00;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
+}
+
+/* User Story 7: If stopwatch is running change the start button to stop button with a red background */
+.stop-btn {
+  background-color: #ff0000 !important;
+  color: white !important;
+}
+
+.stop-btn:hover {
+  background-color: #cc0000 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+
+.lap-btn {
+  background-color: #0066ff;
+  color: white;
+}
+
+.lap-btn:hover {
+  background-color: #0044cc;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 102, 255, 0.3);
+}
+
+.reset-btn {
+  background-color: #ff8800 !important;
+  color: white !important;
+}
+
+.reset-btn:hover {
+  background-color: #cc6600 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 136, 0, 0.3);
+}
+.lap-list {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 0 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.lap-list li {
+  background-color: #2a2a2a;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #00ff00;
+  font-family: "Courier New", monospace;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.lap-list li:hover {
+  background-color: #3a3a3a;
+  transform: translateX(5px);
+}
+
+.lap-number {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+.lap-time {
+  color: #ffffff;
+}
+.lap-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.lap-list::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+.lap-list::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+.lap-list::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+@media (max-width: 600px) {
+  .container {
+    min-width: 300px;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .time-display {
+    font-size: 2.5em;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
