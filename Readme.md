@@ -73,7 +73,7 @@ stopWatch/
 
 ## 🚀 Getting Started
 
-Live Demo <code></code>
+Live Demo <code>https://shorturl.at/N7BKP</code>
 
 1. Clone or download the project files
 2. Open `index.html` in any modern web browser
