@@ -22,17 +22,6 @@ stopWatch/
 └── Readme.md          # Project documentation
 ```
 
-## 🎯 User Stories Implemented
-
-✅ **User Story 1**: Create a div with the class container and center it on screen  
-✅ **User Story 2**: Give body background black colour and text colour white  
-✅ **User Story 3**: Implement a label tag and show the time in this label tag  
-✅ **User Story 4**: Implement two buttons named as Lap and Start  
-✅ **User Story 5**: Start button starts the timer of the stopwatch  
-✅ **User Story 6**: The lap button prepends a new list element with the current time  
-✅ **User Story 7**: If stopwatch is running change the start button to stop button with a red background  
-✅ **User Story 8**: If the user stops the time change the Lap button to reset which resets the stopwatch
-
 ## 🛠️ Technologies Used
 
 - **HTML5**: Semantic markup and structure
